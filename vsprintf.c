@@ -16,7 +16,7 @@
 
 unsigned long simple_strtoul(const char *cp,char **endp,unsigned int base)
 {   //将一个字符串转换成using long 型数据。返回转换后的数据，cp指向分析的字符串末尾的位置，base为要用的基数，base为0表示通过cp来自动判断基数，函数自动可识别的基数：
- ‘0x’表示16进制，‘0’表示8进制，其他都认定为10进制。函数可转换成数字的有效字符为
+ //‘0x’表示16进制，‘0’表示8进制，其他都认定为10进制。函数可转换成数字的有效字符为
 	unsigned long result = 0,value;
 
 	if (!base) {      //base为0表示默认10进制
